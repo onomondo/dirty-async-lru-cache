@@ -8,11 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@v4
 
-    - uses: actions/setup-node@v1.4.1
-      with:
-        node-version: '10.16.3'
+    - uses: actions/setup-node@v4
     # https://github.com/actions/cache/blob/master/examples.md#node---yarn
     - name: Get yarn cache
       id: yarn-cache
